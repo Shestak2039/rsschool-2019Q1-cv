@@ -8,6 +8,7 @@
 4. HTML, Semantic HTML, CSS, Javascript, Java(basics).
 5. My latest exercises from codewars:  
 ***  
+```javascript
     function validParentheses(parens){  
       var counter = 0;  
       for(var i = 0; i < parens.length; i++){  
@@ -16,7 +17,9 @@
       }  
       return (counter == 0);  
     }  
-***  
+```
+***
+```javascript
     var uniqueInOrder=function(iterable){  
       var arr = [];  
       if(iterable.length == 0) return [];  
@@ -25,7 +28,8 @@
         if(iterable[i] != iterable[i - 1]) arr.push(iterable[i]);  
       }  
       return arr;  
-    }  
+    }
+```  
 ***  
 6. No project
 7. Lectures on the basics of algorithms and programming in university, basics HTML and CSS on site code.mu and Javascript on site learn.javascript.ru

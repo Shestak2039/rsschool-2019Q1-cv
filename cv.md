@@ -28,3 +28,5 @@
     }  
 ***  
 6. No project
+7. Lectures on the basics of algorithms and programming in university, basics HTML and CSS on site code.mu and Javascript on site learn.javascript.ru
+8. A2

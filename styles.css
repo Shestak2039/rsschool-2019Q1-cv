@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px black;
+}
+.header{
+	margin-top: 30px;
+	background-color: #454545;
+	padding: 30px 0;
+}
+.container-about{
+	display: flex;
+	margin: 0 auto;
+	width: 900px;
+	justify-content: space-between;
+}
+.photo{
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px white;
+}
+.name{
+	margin-top: 70px;
+	color: white;
+	font-size: 40px;
+	text-shadow: 0px 0px 5px black;
+}
+.menu {
+	list-style: none;
+	font-size: 18px;
+	margin-top: 40px;
+}
+.menu li {
+	padding-top: 10px;
+	position: relative;
+}
+.menu li img {
+	position: absolute;
+	left: -27px;
+	top: 8px;
+	filter: invert(1);
+}
+.menu li a:link,
+.menu li a:visited {
+	text-decoration: none;
+	color: #959595;
+}
+
+.menu li a:hover {
+	color: #2eb398;
+	text-shadow: 0px 0px 1px yellow;
+}
+.skills {
+	color: white;
+}
+.box .subtitle {
+	color: #2eb398;
+}
+.box {
+	width: 250px;
+	padding: 10px;
+	margin: 20px 20px 0 20px;
+	border: 3px solid yellow;
+	border-radius: 10px;
+	animation: anim 4s linear infinite alternate;
+}
+@keyframes anim {
+	form {
+		margin-left: 20px;
+	}
+	to {
+		margin-left: 735px;
+	}
+}

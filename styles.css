@@ -1,140 +1,191 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+* {
+    font-family: sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.wrapper{
-	width: 1000px;
-	margin: 0 auto;
-	box-shadow: 0px 0px 10px black;
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+    box-shadow: 0 0 10px black;
 }
-.header{
-	background-color: #323232;
-	padding: 30px 0;
+
+.header {
+    padding: 30px 0;
+
+    background-color: #323232;
 }
-.container-about{
-	display: flex;
-	margin: 0 auto;
-	width: 900px;
-	justify-content: space-between;
+
+.container-about {
+    display: flex;
+
+    width: 900px;
+    margin: 0 auto;
+
+    justify-content: space-between;
 }
-.photo{
-	border-radius: 20px;
-	box-shadow: 0px 0px 5px white;
+
+.photo {
+    border-radius: 20px;
+    box-shadow: 0 0 5px white;
 }
-.name{
-	margin-top: 70px;
-	color: white;
-	font-size: 40px;
-	text-shadow: 0px 0px 5px black;
+
+.name {
+    font-size: 40px;
+
+    margin-top: 70px;
+
+    color: white;
+    text-shadow: 0 0 5px black;
 }
+
 .menu {
-	list-style: none;
-	font-size: 18px;
-	margin-top: 40px;
+    font-size: 18px;
+
+    margin-top: 40px;
+
+    list-style: none;
 }
+
 .menu li {
-	padding-top: 10px;
-	position: relative;
+    position: relative;
+
+    padding-top: 10px;
 }
+
 .menu li img {
-	position: absolute;
-	left: -27px;
-	top: 8px;
-	filter: invert(1);
+    position: absolute;
+    top: 8px;
+    left: -27px;
+
+    -webkit-filter: invert(1);
+            filter: invert(1);
 }
+
 .menu li a:link,
 .menu li a:visited {
-	text-decoration: none;
-	color: #959595;
+    text-decoration: none;
+
+    color: #959595;
 }
 
 .menu li a:hover {
-	color: #2eb398;
-	text-shadow: 0px 0px 1px yellow;
+    color: #2eb398;
+    text-shadow: 0 0 1px yellow;
 }
+
 .skills {
-	color: white;
+    color: white;
 }
+
 .box .subtitle {
-	color: #BF3A30;
+    color: #bf3a30;
 }
+
 .box {
-	width: 250px;
-	padding: 10px;
-	margin: 0 20px;
-	border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, yellow 0%, transparent 40%, transparent 60%, yellow 100%);
-  border-image-slice: 1;
-	animation: anim 4s linear infinite alternate;
+    width: 250px;
+    margin: 0 20px;
+    padding: 10px;
+
+    -webkit-animation: anim 4s linear infinite alternate;
+            animation: anim 4s linear infinite alternate;
+
+    border-width: 3px;
+    border-style: solid;
+    -o-border-image: linear-gradient(to bottom, yellow 0%, transparent 40%, transparent 60%, yellow 100%);
+       border-image: linear-gradient(to bottom, yellow 0%, transparent 40%, transparent 60%, yellow 100%);
+    border-image-slice: 1;
 }
+
+@-webkit-keyframes anim {
+    from {
+        transform: translateX(0);	
+    }
+    to {
+        transform: translateX(735px);
+    }
+}
+
 @keyframes anim {
-	form {
-		margin-left: 20px;
-	}
-	to {
-		margin-left: 735px;
-	}
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(700px);
+    }
 }
 
 .main {
-	background-color: #36D88A;
-	padding: 10px;
+    padding: 10px;
+
+    background-color: #36d88a;
 }
+
 .section-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	color: white;
+    display: flex;
+
+    color: white;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .section-container section {
-	width: 480px;
-	border-radius: 20px;
-	min-height: 300px;
-	padding: 20px;
-	margin-top: 20px;
+    width: 480px;
+    min-height: 300px;
+    margin-top: 20px;
+    padding: 20px;
+
+    border-radius: 20px;
 }
 
 .section-container section .text {
-	margin-top: 10px;
-	text-align: justify;
-	line-height: 25px;
+    line-height: 25px;
+
+    margin-top: 10px;
+
+    text-align: justify;
 }
 
 .code {
-	white-space: pre;
+    white-space: pre;
 }
 
 .summary {
-	background-color: #FF4540;
+    background-color: #ff4540;
 }
 
-.code-examples{
-	background-color: #AC3BD4;
-	position: relative;
+.code-examples {
+    position: relative;
+
+    background-color: #ac3bd4;
 }
 
-.code-examples:after{
-	position: absolute;
-	content: '';
-	width: 460px;
-	border-top: 1px dashed black;
-	top: 225px;
-	left: 11px;
+.code-examples:after {
+    position: absolute;
+    top: 225px;
+    left: 11px;
+
+    width: 460px;
+
+    content: '';
+
+    border-top: 1px dashed black;
 }
 
-.education{
-	background-color: #EB3B8B;
+.education {
+    background-color: #eb3b8b;
 }
 
 .english {
-	background-color: #FF9A40;
+    background-color: #ff9a40;
 }
 
 .footer {
-	height: 50px;
-	background-color: #323232;
+    height: 50px;
+
+    background-color: #323232;
 }
